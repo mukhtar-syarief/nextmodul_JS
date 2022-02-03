@@ -12,12 +12,12 @@ function getData(url, cb) {
   const data = getData("https://jsonplaceholder.typicode.com/users", function(data) {
       data.forEach((data) => {
         document.getElementById('main_data').innerHTML+=`<tr>
-        <th>${data.id}</th>
-        <th>${data.name}</th>
-        <th>${data.username}</th>
-        <th>${data.email}</th>
-        <th>${data.address.street},${data.address.suite},${data.address.city}</th>
-        <th>${data.company.name}</th>
+        <td>${data.id}</td>
+        <td>${data.name}</td>
+        <td>${data.username}</td>
+        <td>${data.email}</td>
+        <td>${data.address.street},${data.address.suite},${data.address.city}</td>
+        <td>${data.company.name}</td>
         </tr>`;      
       });
     });
